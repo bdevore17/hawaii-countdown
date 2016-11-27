@@ -12,6 +12,7 @@
   "author": "Ben Devore",
   "license": "ISC",
   "dependencies": {
-    "mailgun-js": "^0.7.14"
+    "mailgun-js": "^0.7.14",
+    "node-schedule": "^1.2.0"
   }
 }
