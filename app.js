@@ -4,7 +4,7 @@ const mailgun = require('mailgun-js')({
   domain: process.env.DOMAIN
 });
 
-const sched = schedule.scheduleJob('0 * 23 * * *', function() {
+const sched = schedule.scheduleJob('0 * * * * *', function() {
 
   var i = 1;
 
