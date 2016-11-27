@@ -1,0 +1,17 @@
+{
+  "name": "hawaii-countdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "6.3.0"
+  },
+  "author": "Ben Devore",
+  "license": "ISC",
+  "dependencies": {
+    "mailgun-js": "^0.7.14"
+  }
+}
