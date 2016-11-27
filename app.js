@@ -4,7 +4,7 @@ const mailgun = require('mailgun-js')({
   domain: process.env.DOMAIN
 });
 const email = require('./email');
-const tripDate = new Date(process.env.year, process.env.MONTH - 1, process.env.DAY, process.env.HOUR, 0, 0, 0);
+const tripDate = new Date(process.env.YEAR, process.env.MONTH - 1, process.env.DAY, process.env.HOUR, 0, 0, 0);
 console.log(tripDate);
 
 const sched = schedule.scheduleJob('0 * '+ (process.env.HOUR - 1) +' * * *', function() {
