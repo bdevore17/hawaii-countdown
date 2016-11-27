@@ -7,13 +7,13 @@ const email = require('./email');
 const tripDate = new Date(process.env.YEAR, process.env.MONTH - 1, process.env.DAY, process.env.HOUR, 0, 0, 0);
 console.log(tripDate);
 
-const sched = schedule.scheduleJob('0 * '+ (process.env.HOUR - 1) +' * * *', function() {
+const sched = schedule.scheduleJob('0 * ' + process.env.SCHEDULE_HOUR + ' ' + process.env.SCHEDULE_MINUTE + ' * *', function() {
 
   var i = 1;
 
   var oneDay = 24 * 60 * 60 * 1000;
   var currentDate = new Date();
-  var diffDays = Math.round(Math.abs((tripDate.getTime() - currentDate.getTime())/(oneDay)));
+  var diffDays = Math.round(Math.abs((tripDate.getTime() - currentDate.getTime()) / (oneDay)));
 
   while (true) {
 
