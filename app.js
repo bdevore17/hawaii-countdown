@@ -7,7 +7,7 @@ const email = require('./email');
 const tripDate = new Date(process.env.YEAR, process.env.MONTH - 1, process.env.DAY, process.env.HOUR, 0, 0, 0);
 console.log(tripDate);
 
-const sched = schedule.scheduleJob('0 * ' + process.env.SCHEDULE_HOUR + ' ' + process.env.SCHEDULE_MINUTE + ' * *', function() {
+const sched = schedule.scheduleJob('0 ' + process.env.SCHEDULE_MINUTE + ' ' + process.env.SCHEDULE_HOUR + ' * * *', function() {
 
   var i = 1;
 
