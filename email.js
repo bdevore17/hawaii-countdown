@@ -163,7 +163,7 @@ exports.secondHalf = ' Days until Hawaii!</span></strong></span></p></div>' +
   '        <td align="center" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;width: 100%;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px">' +
   '            <div align="center" style="font-size:12px">' +
   '                <a href="https://beefree.io" target="_blank">' +
-  '                    <img class="center fullwidth" align="center" border="0" src="https://media-cdn.tripadvisor.com/media/photo-s/06/0c/99/9e/sheraton-maui-resort.jpg" alt="Sheraton Maui" title="Sheraton Maui" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block;border: none;height: auto;line-height: 100%;margin: 0 auto;float: none;width: 100% !important;max-width: 480px" width="480">' +
+  '                    <img class="center fullwidth" align="center" border="0" src="' + process.env.IMAGE_URL + '" alt="" title="" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block;border: none;height: auto;line-height: 100%;margin: 0 auto;float: none;width: 100% !important;max-width: 480px" width="480">' +
   '                </a>' +
   '' +
   '            </div>' +
