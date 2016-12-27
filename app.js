@@ -29,7 +29,10 @@ const sched = schedule.scheduleJob('0 ' + process.env.SCHEDULE_MINUTE + ' ' + pr
     };
 
     mailgun.messages().send(data, function(error, body) {
-      console.log(body);
+      if (!error)
+        console.log(body);
+      else
+        console.log(error);
     });
 
     i++;
